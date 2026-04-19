@@ -1,6 +1,5 @@
-import { Instagram, Facebook, Ghost } from "lucide-react"; // Using Ghost or similar as fallback for WhatsApp if not available in Lucide, wait, Lucide has no WhatsApp. Wait, no, it might not. I will use a message-circle for whatsapp
+import { Instagram, Facebook } from "lucide-react";
 import { MessageCircle, Utensils } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -75,10 +74,6 @@ export default function Footer() {
           <p className="text-stone-500 text-sm font-medium text-center">
             &copy; {new Date().getFullYear()} Restaurante e Marmitaria Vitória. Todos os direitos reservados.
           </p>
-
-          <Link to="/prompt" className="text-sm font-bold text-red-600 hover:text-red-700 transition-colors">
-            Ver Prompt
-          </Link>
         </div>
       </div>
     </footer>
